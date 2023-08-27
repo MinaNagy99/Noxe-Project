@@ -41,6 +41,7 @@ function App() {
   let routers= createHashRouter([
     {path : '/' , element : <Layout userData={userData} setUserData={setUserData}/>  ,children:[
       {index:true , element : <ProtectedRoute><Home/></ProtectedRoute> },
+      {index:'https://minanagy99.github.io/Noxe-Project' , element : <ProtectedRoute><Home/></ProtectedRoute> },
       {path : 'movies' , element : <ProtectedRoute><Movies/></ProtectedRoute>},
       {path : 'people' , element : <ProtectedRoute><People/></ProtectedRoute>},
       {path : 'about' , element : <ProtectedRoute><About/></ProtectedRoute>},
